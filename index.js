@@ -64,6 +64,9 @@ run().catch(console.dir)
 app.get('/',(req,res)=>{
     res.send("Genius cart running")
 })
+app.get('/hello',(req,res)=>{
+    res.send("Hello updated")
+})
 
 app.listen(port,()=>{
     console.log('Listening at ' ,port)
